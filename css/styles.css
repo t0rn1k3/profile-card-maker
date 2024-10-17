@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Old Standard TT';
+    text-transform: capitalize;
 }
 body {
     height: 100vh;
@@ -19,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 7px;
+    position: relative;
 }
 .profile-image {
     width: 70%;
@@ -31,11 +33,28 @@ body {
     width: 70%;
 }
 .details {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 10px;
     color: rgb(0, 0, 45);
 }
 .details span:first-child {
     display: inline-block;
     width: 100px;
+}
+.form {
+    width: 200px;
+    position: absolute;
+    left: -230px;
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+input {
+    padding: 3px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 1px solid  rgb(0, 0, 45);
 }
