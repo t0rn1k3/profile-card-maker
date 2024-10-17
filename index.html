@@ -13,58 +13,104 @@
     <div class="profile-card">
         <form class="form">
             <div>
-                <label for="">name</label>
-                <input type="text" name="" id="">
+                <label for="fname">name</label>
+                <input 
+                    type="text" 
+                    name="fname" 
+                    id="fname"
+                    minlength="2"
+                    required>
             </div>
             <div>
-                <label for="">surname</label>
-                <input type="text" name="" id="">
+                <label for="lname">surname</label>
+                <input 
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    minlength="2"
+                    required>
             </div>
-            <div>
+            <div class="gender">
                 <label for="">gender</label>
-                <label for="">male</label>
-                <input type="radio" name="gender" id="">
-                <label for="">female</label>
-                <input type="radio" name="gender" id="">
-                <label for="">other</label>
-                <input type="radio" name="gender" id="">
+                <div>
+                    <label for="">male</label>
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        id="male" 
+                        value="male" 
+                        required>
+                </div>
+                <div>
+                    <label for="">female</label>
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        id="female" 
+                        value="female"
+                        required>
+                </div>
+                <div>
+                    <label for="">other</label>
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        id="other" 
+                        value="other" 
+                        required>
+                </div>
             </div>
             <div>
-                <input type="date" name="" id="">
+                <input type="date" name="date" id="date" required>
             </div>
             <div>
-                <label for="">ატვირთეთ სურათი</label>
-                <input type="file" name="" id="">
+                <label for="degree">degree</label>
+                <select name="degree" id="degreeSelect">
+                    <option value="">Select your degree</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                    <option value="PhD">PhD</option>
+                </select>
             </div>
+            <div>
+                <label class="file">
+                    Upload image
+                    <input type="file" name="file" id="file" accept="image/*" required>
+                </label>
+            </div>
+            <input name="submit" type="submit" value="შენახვა">
         </form>
     
     
         <div class="profile-image">
-            <img width="100" src="images/profile.png" alt="">
+            <img id="uploadedImage" src="images/profile.png" alt="">
         </div>
         <div class="info-container">
             <div class="details">
                 <span>name :</span>
-                <span id="firstName">Tornike</span>
+                <span id="firstName"></span>
             </div>
             <div class="details">
                 <span>surname :</span>
-                <span id="lastName">Burjanadze</span>
+                <span id="lastName"></span>
             </div>
             <div class="details">
                 <span>gender :</span>
-                <span id="sex">male</span>
+                <span id="sex"></span>
             </div>
             <div class="details">
                 <span>date of birth :</span>
-                <span id="">10/11/1997</span>
+                <span id="dateOfBirth"></span>
             </div>
             <div class="details">
                 <span>degree :</span>
-                <span>college</span>
+                <span id="degree"></span>
             </div>
         </div>
+        <button type="button" class="saved-profiles">saved profiles</button>
     </div>
     
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

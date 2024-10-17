@@ -24,6 +24,7 @@ body {
 }
 .profile-image {
     width: 70%;
+    height: 200px;
 }
 .profile-image img {
     width: 100%;
@@ -46,7 +47,7 @@ body {
     position: absolute;
     left: -230px;
 }
-.form div {
+.form > div {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -57,4 +58,43 @@ input {
     border-radius: 5px;
     border: 0;
     border-bottom: 1px solid  rgb(0, 0, 45);
+}
+.gender > div label {
+    display: inline-block;
+    margin-top: 7px;
+    width: 60px;
+}
+input[type=submit] {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 7px;
+    position: relative;
+    transition: .3s;
+}
+input[type=submit]:hover {
+    color: white;
+    background-color:rgba(0, 0, 45, .7);
+}
+.file {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 45, .7);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.file input {
+    display: none;
+}
+select {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 45, .7);
+    padding: 5px;
+}
+.saved-profiles {
+    
 }
