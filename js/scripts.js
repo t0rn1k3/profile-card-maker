@@ -19,6 +19,9 @@ const dateOfBirth = document.querySelector('#dateOfBirth');
 const degree = document.querySelector('#degree');
 const uploadedImage = document.querySelector('#uploadedImage');
 
+const saveButton = document.querySelector('.saved-profiles');
+const displayProfiles = document.querySelector('.diplay-profiles')
+
 // display input values in profile card
 
 
@@ -49,5 +52,12 @@ fileInput.addEventListener('change', (event)=> {
         }
         reader.readAsDataURL(file);
     }
-})
+});
+
+//show saved profiles after click
+saveButton.addEventListener('click', ()=> {
+    displayProfiles.style.display = 'flex';
+});
+
+// load data from localstorage
 
