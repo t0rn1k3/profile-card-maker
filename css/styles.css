@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Old Standard TT';
 }
 body {
     height: 100vh;
@@ -30,7 +31,11 @@ body {
     width: 70%;
 }
 .details {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 10px;
     color: rgb(0, 0, 45);
+}
+.details span:first-child {
+    display: inline-block;
+    width: 100px;
 }
