@@ -149,3 +149,15 @@ select {
     justify-content: space-between;
     align-items: center;
 }
+.fa-regular {
+    font-size: 40px;
+    color: rgb(218, 211, 255);
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+.checked {
+    margin: 3px 7px;
+    display: none;
+}
